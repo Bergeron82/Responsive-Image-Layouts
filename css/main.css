@@ -1,0 +1,410 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: rgb(78, 78, 78);
+    font-weight: 400;
+    line-height: 24px;
+}
+#wrapper {
+    background-color: #fff;
+    width: 85%;
+    margin: 0 auto;
+}
+header {
+    background-image: url(../assets/alpine1.jpg);
+    background-size: cover;
+    padding: 3em 1.5em;
+    height: 6em;
+}
+nav {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Raleway','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    height: 46px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: -2.7em;
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1; 
+}
+
+nav ul { 
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    width: 8em;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+nav a:link {
+    color: rgb(180, 180, 180);
+    transition: color 1s ease;
+}
+
+nav a:hover {
+    color: rgb(118, 232, 252);
+    transform: rotateX(150deg);
+}
+
+a.current:link, a.current:visited { color: rgb(58, 183, 255); }
+/*sub menu */
+
+nav ul ul {
+    position: absolute;
+    display: none;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+}
+
+nav ul ul li {
+    display: block;
+    width: 8em;
+    margin-top: 5px;
+}
+
+nav li:hover ul {
+    display: block;
+}
+h1 { color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: 600;
+    text-align: center;
+}
+nav {
+    padding: 10px;
+}
+#hero1 { margin-top: 2em;
+    background-image: url('../assets/sub2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40em;
+}
+#hero2 { margin-top: 2em;
+    background-image: url('../assets/alpine3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40em;
+}
+#hero3 { margin-top: 2em;
+    background-image: url('../assets/g4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40em;
+}
+
+section {
+    background-color: #fff;
+    padding: .25em;
+}
+article {
+    display: inline-block;
+    padding: 10px;
+}
+
+p { padding: 10px;}
+#float1 { float: right;
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+    padding-right: 0;
+}
+#float2 { float: left;
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+    padding-left: 0;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    padding: 3px;
+}
+figure img {
+    width: 640px;
+    height: 400px;
+}
+h2 {
+    color: rgb(78, 78, 78);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    padding: 40px 0 30px;
+}
+#text { width: 80%; 
+    margin: 0 auto; 
+}
+#gallery {
+    position: relative;
+    width: 640px;
+    height: 400px;
+    margin: 0 auto 3em;
+    border-radius: 4px;
+}
+#gallery:before, #gallery:after {
+    position: absolute;
+    display: block;
+    bottom: 16px;
+    width: 50%;
+    height: 20px;
+    content: "";
+    border-radius: 50%;
+    z-index: -10;
+}
+#gallery:before {
+    left: 0;
+}
+#gallery:before {
+    right: 0;
+}
+#gallery .container {
+    position: relative;
+    width: 640px;
+    height: 400px;
+    overflow: hidden;
+}
+#gallery .container:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+}
+#gallery .c_slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 400px;
+    background: url(../assets/alpine1.jpg) 0 0 no-repeat, url(../assets/alpine2.jpg) 640px 0 no-repeat, url(../assets/alpine3.jpg) 1280px 0 no-repeat, url(../assets/alpine4.jpg) 1920px 0 no-repeat;
+}
+.sl_i:target ~ #gallery .c_slider {
+    transition: background 3s;
+}
+#gallery figure {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+#gallery figure:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#gallery figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid white;
+    color: #555;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.thumbnails { width: 80%;
+    margin-bottom: 2em;
+}
+section ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 auto;
+}
+section li {
+    flex-grow: 1;
+}
+section a {
+    text-decoration: none;
+}
+
+/* slider keyframe animation */
+.slider2 {
+    width: 40em;
+    height: 25em;
+    margin: 0 auto;
+    background-image: none;
+    animation: slider1 10s ease-in-out .25s infinite;
+}
+/* @-webkit-keyframes slider1 {
+
+} */
+
+@keyframes slider1 {
+    0% { background-image: url(../assets/g1.jpg); 
+        background-size: 100% 100%;
+    }
+    16% { background-image: url(../assets/g2.jpg); }
+    32% { background-image: url(../assets/g3.jpg); }
+    48% { background-image: url(../assets/g4.jpg); }
+    75% { background-image: url(../assets/g5.jpg); 
+        background-size: 100% 100%;
+    }
+    100% { background-image: url(../assets/g6.jpg); 
+        background-size: 100% 100%;
+    }
+}
+
+/* filtered images */
+.filter {
+    display: flex;
+    margin: 0 auto;
+    width: 25%;
+    justify-content: space-around;
+    margin-bottom: 2em; 
+}
+
+.dropshadow {
+    filter: grayscale(100%); 
+}
+.dropshadow:hover {
+    width: 350px;
+    height: 200px;
+    filter: grayscale(0%);
+    filter: drop-shadow(2px 2px 3px gray);
+    filter: brightness(1.15);
+}
+footer { background-color: rgb(198, 234, 255);
+   text-align: center;
+   font-size: .8em;
+   padding: 20px;
+}
+strong { font-weight: bold; }
+
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) { 
+    #wrapper { width: 90% }
+    article { display: inline-block;}
+    #hero1, #hero2, #hero3 { 
+        background-size: 100%;
+        height: 30em;
+    }
+    #float1 { float: right;
+        width: 70%;
+        height: 70%;
+        padding: 20px;
+        padding-right: 0;
+    }
+    #float2 { float: left;
+        width: 70%;
+        height: 70%;
+        padding: 20px;
+        padding-left: 0;
+    }
+    .thumbnails { width: 100%;
+        margin: 0 auto;
+    }
+    .thumbnails img { 
+        margin-bottom: 1.5em;
+        margin-left: .5em;
+    }
+    h2 { line-height: 1.2em;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .filter { display: block;
+        width: 70%;
+    }
+}
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) 
+{
+    nav { height: 120px; 
+        margin-top: -5.8em;
+    }
+
+    nav a { width: 100%;
+        padding-left: 0;
+    }
+
+    #wrapper { width: 100%; }
+
+    nav ul li { display: block;
+        margin-right: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    main { width: 100; }
+    h1 { font-size: 2em;
+        line-height: 1em;
+        background-color: rgba(0, 0, 0, .5 );
+        padding: 5px;
+        margin-top: -.8em;
+    }
+    h2 { font-size: 2em;
+        line-height: 1.2em;
+        padding: 40px 5px 10px 5px;
+    }
+    article { display: inline-block; }
+    #hero1, #hero2, #hero3 { 
+        background-size: 100%;
+        height: 15em;
+    }
+    #hero1 { display: none; }
+    header { height: 10em;}
+    #float1 { margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        padding-right: 0
+    }
+    #float2 { margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        padding-left: 0;
+    }
+    .thumbnails { margin-bottom: 1em;}
+    .thumbnails img { 
+        width: 100%;
+        height: 100%;
+    }
+    section ul {
+        display: block;
+    }
+    .filter { display: block;
+        width: 100%;
+        margin-left: 1.8em;
+    }
+    #gallery { display: none;}
+    .slider2 { width: 20em; 
+        height: 12em;
+        margin-bottom: 2em;
+    }
+}
